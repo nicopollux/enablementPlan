@@ -1,0 +1,15 @@
+input.App__address {
+  width: 400px;
+}
+button.App__submit {
+  margin-left: 50px;
+}
+table.App__tableau {
+  width: 300px;
+  border: 1px;
+}
+td.App__colonne {
+  width: 150px;
+}
+
+/*# sourceMappingURL=app.css.map*/

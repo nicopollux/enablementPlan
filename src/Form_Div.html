@@ -1,0 +1,91 @@
+<form>
+    <div>PLAN</div>
+    <div>Topics</div>
+    <div className={Styles.rTable}>
+        <div className="rTableBody">
+            <div className="rTableRow">
+                <div className="rTableCell"><input name="SPE 1" type="checkbox" value="1" />&nbsp;SPE 1</div>
+                <div className="rTableCell"><input name="SPE 3" type="checkbox" value="3" />&nbsp;SPE 3</div>
+            </div>
+            <div className="rTableRow">
+                <div className="rTableCell"><input name="SPE 2" type="checkbox" value="2" />&nbsp;SPE 2</div>
+                <div className="rTableCell"><input name="SPE 4" type="checkbox" value="4" />&nbsp;SPE 4</div>
+            </div>
+        </div>
+    </div>
+    
+    <div>Personas</div>
+    <div class="rTable">
+        <div class="rTableBody">
+            <div class="rTableRow">
+                <div class="rTableCell"><input name="Developer" type="checkbox" value="Dev" />&nbsp;Developer</div>
+                <div class="rTableCell"><input name="SE" type="checkbox" value="SE" />&nbsp;SE</div>
+            </div>
+            <div class="rTableRow">
+                <div class="rTableCell"><input name="Architect" type="checkbox" value="Architect" />&nbsp;Architect</div>
+                <div class="rTableCell"><input name="PM" type="checkbox" value="PM" />&nbsp;PM</div>
+            </div>
+            <div class="rTableRow">
+                <div class="rTableCell"><input name="DevOps" type="checkbox" value="DevOps" />&nbsp;DevOps</div>
+                <div class="rTableCell"><input name="..." type="checkbox" value="..." />&nbsp;...</div>
+            </div>
+        </div>
+    </div>
+    <p><input name="GO" type="button" value="Generate Plan" /></p>
+    <p>Developer :&nbsp;<input placeholder='Developer Name' name="Name" type="text" value={this.state.devName} /></p>
+    <div class="rTable">
+        <div class="rTableHeading">
+            <div class="rTableRow">
+                <div class="rTableHead">Trailmix</div>
+                <div class="rTableHead">Phase</div>
+            </div>
+        </div>
+        <div class="rTableBody">
+            <div class="rTableRow">
+                <div class="rTableCell">Core Dev</div>
+                <div class="rTableCell">
+                    <select name="Phase" size="1">
+                        <option selected="selected" value="Phase 1">Phase 1</option>
+                        <option value="Phase 2">Phase 2</option>
+                        <option value="Phase 3">Phase 3</option>
+                        <option value="Phase 4">Phase 4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rTableRow">
+                <div class="rTableCell">SPE 2</div>
+                <div class="rTableCell">
+                    <select name="Phase" size="1">
+                        <option value="Phase 1">Phase 1</option>
+                        <option value="Phase 2">Phase 2</option>
+                        <option selected="selected" value="Phase 3">Phase 3</option>
+                        <option value="Phase 4">Phase 4</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>PM :&nbsp;<input name="Contact Name" type="text" value="Contact Name" /></p>
+    <div class="rTable">
+        <div class="rTableHeading">
+            <div class="rTableRow">
+                <div class="rTableHead">Trailmix</div>
+                <div class="rTableHead">Phase</div>
+            </div>
+        </div>
+        <div class="rTableBody">
+            <div class="rTableRow">
+                <div class="rTableCell">Core PM</div>
+                <div class="rTableCell">
+                    <select name="Phase" size="1">
+                        <option value="Phase 1">Phase 1</option>
+                        <option selected="selected" value="Phase 2">Phase 2</option>
+                        <option value="Phase 3">Phase 3</option>
+                        <option value="Phase 4">Phase 4</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p><input name="Generate DD" type="button" value="Generate DD" /></p>
+</form>
